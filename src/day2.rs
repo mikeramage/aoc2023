@@ -74,9 +74,9 @@ pub struct Grab {
 impl Grab {
     pub fn new(num_red: usize, num_green: usize, num_blue: usize) -> Grab {
         Grab {
-            num_red: num_red,
-            num_green: num_green,
-            num_blue: num_blue,
+            num_red,
+            num_green,
+            num_blue,
         }
     }
 
@@ -116,9 +116,9 @@ pub struct Bag {
 impl Bag {
     pub fn new(num_red: usize, num_green: usize, num_blue: usize) -> Bag {
         Bag {
-            num_red: num_red,
-            num_green: num_green,
-            num_blue: num_blue,
+            num_red,
+            num_green,
+            num_blue,
         }
     }
 }
