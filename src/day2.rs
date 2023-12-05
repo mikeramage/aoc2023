@@ -30,7 +30,7 @@ pub fn day2() -> (usize, usize) {
                             _ => panic!("No clue what this color is!"),
                         }
                     }
-                    Grab::new(Some(num_red), Some(num_green), Some(num_blue))
+                    Grab::new(num_red, num_green, num_blue)
                 })
                 .collect::<Vec<Grab>>();
             game.grabs = grabs.to_vec();
@@ -39,7 +39,7 @@ pub fn day2() -> (usize, usize) {
         .collect::<Vec<Game>>()
         .to_vec();
 
-    let bag = Bag::new(Some(12), Some(13), Some(14));
+    let bag = Bag::new(12, 13, 14);
 
     //Sum the IDs of the possible games
     (
@@ -72,11 +72,11 @@ pub struct Grab {
 }
 
 impl Grab {
-    pub fn new(num_red: Option<usize>, num_green: Option<usize>, num_blue: Option<usize>) -> Grab {
+    pub fn new(num_red: usize, num_green: usize, num_blue: usize) -> Grab {
         Grab {
-            num_red: num_red.unwrap_or(0),
-            num_green: num_green.unwrap_or(0),
-            num_blue: num_blue.unwrap_or(0),
+            num_red: num_red,
+            num_green: num_green,
+            num_blue: num_blue,
         }
     }
 
@@ -114,11 +114,11 @@ pub struct Bag {
 }
 
 impl Bag {
-    pub fn new(num_red: Option<usize>, num_green: Option<usize>, num_blue: Option<usize>) -> Bag {
+    pub fn new(num_red: usize, num_green: usize, num_blue: usize) -> Bag {
         Bag {
-            num_red: num_red.unwrap_or(0),
-            num_green: num_green.unwrap_or(0),
-            num_blue: num_blue.unwrap_or(0),
+            num_red: num_red,
+            num_green: num_green,
+            num_blue: num_blue,
         }
     }
 }
