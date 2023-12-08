@@ -14,7 +14,6 @@ where
 }
 
 /// Parse input by splitting on blank lines and returning as a vector of strings
-#[allow(dead_code)]
 pub fn parse_input_by_blank_lines(input_file: &str) -> Vec<String> {
     let input = fs::read_to_string(input_file).expect("Oh dear, couldn't read file!");
     let vector: Vec<String> = input.split("\n\n").map(|x| x.to_string()).collect();
