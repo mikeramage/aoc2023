@@ -26,3 +26,36 @@ A walk in the park, if a slow and incompetent one. I inexplicably spent an inord
 What manner of hell is this? What's with all the "Ha ha I'll put the word 'mapping' in your head to make you think you need to unpack the ranges and put all the mappings into 7 HashMaps and chain the calls together but you won't have read the _real_ input just the _test_ input and it'll work on the _test_ input and you'll think it's _easy_ and that it'll also work on the _real_ input but the _real_ input has _really_ big numbers so it won't and you'll have to implement it all over again so it doesn't take the lifetime of the universe to run and then just when you've smugly solved part 1 after a rewrite I'll make the numbers _even bigger_ in part 2 so ha ha ho ho even with your nice solution to part 1 it'll still take the lifetime of the universe to run part 2 and you'll be sad and cry into your cold mug of coffee at your lonely desk you sad sack loser boo hoo boo hoo world's smallest violin"?
 
 Well, I've got news for you, AOC. Sure there might be an elegant and speedy solution to be discovered, but I'm a brute and I wrote a brute force one. But you know what? I wrote it in _Rust_, and I _passed the -r flag_ to `cargo run`. You know what that means, right? Don't you? Huh? Yeah, course you do. It means _compiled_. It means _release_. It means _optimized_. 3 minutes and 33 seconds to chew through billions of meaningless calculations. Chew on that! Oh yeah!
+
+## Day 6
+Without wanting to tempt fate too strongly, this felt ... good. Like I'm bumping my nut against the ceiling of competence and finally putting a little crack in it. A bit of splitting here, some mapping there, a zip every now and again and Bob's your uncle: input parsed. Bish. 
+
+Little bit of maths to find the optimum time, work back from the middle, times by 2 once you drop below the record and Bob's your uncle. part 1 done. Bash.
+
+Smoosh the digits together for part two and Bob again is your uncle: part 2 done. Bosh. 
+
+Job done. 
+
+Your grandparents really did have very little imagination when it came to naming their children. 
+
+Apparently nobody really knows where or when "Bob's your uncle" - the British version of "voilà!" - originated. There's a hypothesis that it's a reference to events in 1887, when then Prime Minister Robert Gascoyne-Cecil appointed his nephew Arthur Balfour as Chief Secretary for Ireland, a move as unpopular as it was surprising, and widely attributed to nepotism. "How did he get that job?" "Well, when Bob's your uncle ...". However, it took another 36 years for "Bob's your uncle" to finally appear in print, in January 1923, which suggests that the story, plausible as it is, is not the true origin of the phrase. It seems that the trail has gone cold for now, the true origins of the phrase obscured by the mists of time. So etymologists of "Bob's your uncle" won't be saying "Bob's your uncle" any time soon. 
+
+I will be though. I like saying it.  
+
+## Day 7
+Rambling, quaint, pedantic, a whiff of Yorkshire. An Alan Bennett monologue as code.
+
+## Day 8
+Oy! What's this! You're not supposed to be chucking this cheeky spot-the-hidden-cycles-and-figure-out-the-prime-factors nonsense at us until at least day 13. I'm not here to think. I'm here to brute force.
+
+The children are fed up with Daddy: "Why is daddy in his office? What's he doing in there?" 
+
+Mummy is fed up with Daddy: "Get out of there and help! They're driving me up the wall!". 
+
+Daddy is fed up.
+
+## Day 9
+Bob's your uncle. 
+
+
+
